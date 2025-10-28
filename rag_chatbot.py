@@ -230,8 +230,8 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    excel_files: Sequence[Path] = args.excel_file or []
-    pdf_dir: Optional[Path] = args.pdf_dir
+    excel_files= "data/faq.xlsx"
+    pdf_dir= "data/pdfs"
 
     chatbot = build_chatbot(
         pdf_dir=pdf_dir,
